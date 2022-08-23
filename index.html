@@ -1,41 +1,532 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="reset.css" />
-  </head>
-  <body>
-    <div id="preloader">
-      <div class="loading" id="text">
-        <h1 class="loading-text">H<span id="offset">EL</span>LO</h1>
-      </div>
-    </div>
+    <!-- Website Title -->
+    <title>Hamza Shaikh - Frontend Engineer</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font-Awesome -->
+    <link
+      href="assets/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Lightbox -->
+    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- Text Rotator-->
+    <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet" />
+    <!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet" />
+    <!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Custom Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon_io/favicon-16x16.png"
+    />
 
-    <div class="site-container">
-      <nav>
-        <ul>
-          <li class="active"><a href="#home-section">Home</a></li>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#tech-section">Technologies</a></li>
-          <li><a href="#projects-section">Projects</a></li>
-        </ul>
-      </nav>
-      <section class="page section-1" id="home-section">
-        <div class="heading">
-          <h1>HAMZA SHAIKH</h1>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/html5shiv/html5shiv.js"></script>
+      <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="top">
+    <!-- ****************************** Preloader ************************** -->
+    <div id="preloader"></div>
+
+    <!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+    <header id="home">
+      <!-- creative menu -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="menu-wrap">
+            <nav class="menu">
+              <!-- Menu Links -->
+              <div class="icon-list">
+                <a href="index.html#home"
+                  ><i class="fa fa-fw fa-home"></i><span>Home</span></a
+                >
+                <a href="index.html#about"
+                  ><i class="fa fa-fw fa-quote-left"></i><span>About</span></a
+                >
+
+                <a href="index.html#portfolio"
+                  ><i class="fa fa-fw fa-picture-o"></i
+                  ><span>Portfolio</span></a
+                >
+
+                <a href="index.html#contact"
+                  ><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a
+                >
+              </div>
+            </nav>
+          </div>
+          <button class="menu-button" id="open-button"></button
+          ><!-- menu button -->
+        </div>
+        <!--/row-->
+      </div>
+      <!--/container-->
+      <!-- Header Image -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <!-- Slider Button (don't edit!)-->
+          <div class="row">
+            <div class="col-md-12 text-right navicon">
+              <a id="nav-toggle" class="nav_slide_button" href="index.html#"
+                ><span></span
+              ></a>
+            </div>
+          </div>
+          <!-- HEADER HEADLINE -->
+          <div class="row">
+            <div class="col-md-8 col-md-offset-1 inner">
+              <h1 class="animated fadeInDown">
+                H<span style="color: #e04343">a</span>mza<br />
+                <span>sh<span style="color: #000000">a</span>ikh</span>
+              </h1>
+              <!-- Title -->
+              <h3 class="animated fadeInUp delay-05s">
+                <span class="rotate">Web Designer,gamer,hooper</span>
+              </h3>
+              <!-- Text Rotator -->
+            </div>
+          </div>
+          <!-- Learn More Button -->
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <a href="index.html#about" class="scrollto wow fadeInUp delay-5s">
+                <p>SEE MORE</p>
+                <p class="scrollto--arrow">
+                  <img src="img/scroll-down.png" alt="scroll down arrow" />
+                </p>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="page section-2" id="about-section"></section>
-      <section class="page section-3" id="tech-section"></section>
-      <section class="page section-4" id="projects-section"></section>
-    </div>
+      <!-- Header Image End -->
+    </header>
+    <!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
 
-    <script src="script.js" async defer></script>
+    <!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+    <section class="intro text-center section-padding color-bg" id="about">
+      <div class="container">
+        <!-- WELCOME TEXT -->
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 wp1">
+            <h1 class="arrow">A little <span>about</span> me</h1>
+            <!-- Headline -->
+            <!-- about / welcome text -->
+            <p>
+              I am Hamza Shaikh, I am a 21 year old student at Mumbai University
+              studying
+              <a href="#">computer engineering</a> and one day hope to achieve
+              my lifelong dream to have my own basketball academy but before i
+              get to my destination, i want to enjoy my journey as a
+              professional UI/UX Designer and achieve great success in my field
+              of work. Being a sportsman for around 10 years of my life, i have
+              learned to have the right discipline and determination towards my
+              goals, i love being a team player and helping others.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+
+    <section class="swag text-center" id="portfolio">
+      <div class="container">
+        <!-- Headline -->
+        <div class="row">
+          <h1 class="arrow">Recent <span>Projects</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid">
+      <!-- About 1 -->
+      <div class="row color-bg">
+        <div class="col-md-6 nopadding features-intro-img">
+          <div
+            class="about-image"
+            style="background-image: url(img/about1.png)"
+          ></div>
+          <!-- about image 1 -->
+        </div>
+        <div class="col-md-6 about-text">
+          <h6>Admin Dashboard</h6>
+          <!-- headline-->
+          <p>
+            This Project was developed to improve my skills with grid layouts
+            and responsive design. It aims to simulate an administrative
+            dashboard interface where users can keep track of their projects,
+            message other users, look up the task that they have to complete,
+            get announcements. Note - This project does not have the above
+            mentioned functionalities because it is merely a website that
+            represents the frontend structure of a website
+          </p>
+          <br /><!-- About Text 1 -->
+          <a
+            href="https://fjorn-x.github.io/admin-dashboard/"
+            target="_blank"
+            class="weight-outline-btn"
+            >visit website</a
+          ><!-- read more button  -->
+        </div>
+      </div>
+      <!-- About 2 -->
+      <div class="row color-bg">
+        <div class="col-md-6 nopadding features-intro-img">
+          <div
+            class="about-image"
+            style="background-image: url(img/about2.png)"
+          ></div>
+          <!-- about image 2 -->
+        </div>
+        <div class="col-md-6 about-text">
+          <h6>Library Cards</h6>
+          <!-- Headline -->
+          <p>
+            In a nutshell, Library Cards is a tracker of all the books borrowed
+            from the library which keeps track of all the books that the user
+            has taken from the library. It keeps track of the reading status and
+            the date it was taken. When the user hovers over the book "cards"
+            the cards perform a simple yet cool animations and reveals the
+            details about the book. When the new books are added,they lay
+            themselves out in a neat way on the website. Lessons : Prototypal
+            Inheritance and Module Pattern.
+          </p>
+          <br /><!-- About Text 2 -->
+          <a
+            href="https://fjorn-x.github.io/library/"
+            class="weight-outline-btn"
+            target="_blank"
+            >visit website</a
+          >
+          <!-- read more button  -->
+        </div>
+      </div>
+      <!-- About 3 -->
+      <div class="row color-bg">
+        <div class="col-md-6 nopadding features-intro-img">
+          <div
+            class="about-image"
+            style="background-image: url(img/about3.png)"
+          ></div>
+          <!-- about image 3 -->
+        </div>
+        <div class="col-md-6 about-text">
+          <h6>Grid Attack</h6>
+          <!-- Headline-->
+          <p>
+            Grid Attack is a project based on the game Etch-a-Sketch where users
+            can make pixelated art by filling a grid with different types of
+            colors. Thi project also has applications in deasigning where users
+            can quickly create a simple mockup of their ideas and then later on
+            expand it with a proper design tool. Main takeaways from this
+            project - using javascript to dynamically render html elements in
+            the form of grids.
+          </p>
+          <br /><!-- About Text 3 -->
+          <a
+            href="https://fjorn-x.github.io/Grid-Attack/"
+            target="_blank"
+            class="weight-outline-btn"
+            >visit website</a
+          ><!-- read more button  -->
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+        ABOUT SECTION END
+        =========================== -->
+
+    <!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+    <div class="spacer-cta text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a
+              href="https://github.com/fjorn-x"
+              target="_blank"
+              class="outline-btn"
+              >Check out github for more projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+
+    <!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+    <section class="text-center section-padding contact-wrap" id="contact">
+      <!-- To Top Button -->
+      <a href="index.html#top" class="up-btn"
+        ><i class="fa fa-chevron-up"></i
+      ></a>
+      <div class="container">
+        <!-- Headline -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">connect <span>with</span> me</h1>
+          </div>
+        </div>
+        <div class="row contact-details">
+          <!-- Adress Box -->
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+              <p>Grant Road, Mumbai, Maharashtra</p>
+            </div>
+          </div>
+          <!-- Phone Number Box -->
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+              <p>+91 7021 785 004</p>
+            </div>
+          </div>
+          <!-- E-Mail Box -->
+          <div class="col-md-4">
+            <div class="dark-box box-hover">
+              <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+              <p>
+                <a href="mailto:hamzashaikh.cs@gmail.com" target="_blank"
+                  >hamzashaikh.cs@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Google Maps (Change your Settings below) -->
+          <div class="col-md-6">
+            <div id="googlemaps"></div>
+          </div>
+          <!-- Contact Form -->
+          <div class="col-md-6 contact">
+            <form role="form">
+              <!-- Name -->
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- E-Mail -->
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- Phone Number -->
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Message Area -->
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Write you message here..."
+                  style="height: 232px"
+                ></textarea>
+              </div>
+              <!-- Subtmit Button -->
+              <button type="submit" class="btn btn-send">Send message</button>
+            </form>
+          </div>
+        </div>
+        <br />
+        <!-- Social Buttons - use font-awesome, past in what you want -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="social-buttons">
+              <li>
+                <a href="https://twitter.com/fjornx" class="social-btn"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <!-- twitter -->
+              <li>
+                <a href="https://github.com/fjorn-x" class="social-btn"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <!-- github -->
+
+              <li>
+                <a
+                  href="https://www.instagram.com/hhamzaaaaa/"
+                  class="social-btn"
+                  target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <!-- instagram -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+
+    <!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Developed by
+              <a href="https://github.com/fjorn-x" target="_blank">hamza</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==========================
+        FOOTER SECTION END
+        =========================== -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->
+    <script
+      type="text/javascript"
+      src="assets/smoothscroll/smoothscroll.js"
+    ></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+    <script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+    <!-- Text Rotator -->
+    <script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+    <!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps -->
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"
+    ></script>
+    <!-- Theme JavaScript Core -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- GOOGLE MAPS DATA -->
+    <script type="text/javascript">
+      // When the window has finished loading create our google map below
+      google.maps.event.addDomListener(window, "load", init);
+
+      function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [
+            {
+              featureType: "water",
+              stylers: [{ color: "#F2F2F2" }, { visibility: "on" }],
+            },
+            { featureType: "landscape", stylers: [{ color: "#FFFFFF" }] },
+            {
+              featureType: "road",
+              stylers: [{ saturation: -100 }, { lightness: 45 }],
+            },
+            {
+              featureType: "road.highway",
+              stylers: [{ visibility: "simplified" }],
+            },
+            {
+              featureType: "road.arterial",
+              elementType: "labels.icon",
+              stylers: [{ visibility: "off" }],
+            },
+            {
+              featureType: "administrative",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#ADADAD" }],
+            },
+            { featureType: "transit", stylers: [{ visibility: "off" }] },
+            { featureType: "poi", stylers: [{ visibility: "off" }] },
+          ],
+        };
+
+        // Get the HTML DOM element that will contain your map
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById("googlemaps");
+
+        // Create the Google Map using out element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+      }
+    </script>
+
+    <!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+      $(".rotate").textrotator({
+        animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+        separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+        speed: 2000, // How many milliseconds until the next word show.
+      });
+    </script>
   </body>
 </html>
